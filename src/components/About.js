@@ -4,20 +4,15 @@ import styled from "styled-components";
 import Navbar from "./Navbar";
 
 const Section = styled.div`
-  height: 100vh;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+  min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: #1f1f1f; */
+
   justify-content: center;
   height: 100vh;
   font-family: "Open Sans", sans-serif;
-
-  scroll-snap-align: center;
 `;
 
 const AboutMe = styled.div`
@@ -47,7 +42,7 @@ function About() {
     <Section id="about">
       <AboutMe>
         <h5>
-          Self taught software engineer who delights in discovering new insights
+          Self-taught software engineer who delights in discovering new insights
           every day and collaborating with fellow innovators to create products
           that have the potential to transform the world.
         </h5>

@@ -7,11 +7,14 @@ import styled from "styled-components";
 import photo from "./components/blu.avif";
 import Navbar from "./components/Navbar";
 const Container = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   color: white;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth; // only applies to non touchpad,mousewheel, touchscreen etc
-  overflow-y: auto; // controls how the content is displayed when it overflows the vertical boundaries of an element.
+  /* scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; */
+  overflow-y: scroll;
+  /* scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; // only applies to non touchpad,mousewheel, touchscreen etc */
+  overflow-y: scroll; // controls how the content is displayed when it overflows the vertical boundaries of an element.
 
   background-image: url(${photo});
   background-repeat: no-repeat;
@@ -21,18 +24,30 @@ const Container = styled.div`
     display: none;
   }
 `;
-const SnapSection = styled.div`
-  min-height: 100vh;
-  scroll-snap-align: center;
+
+const SnapContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 `;
 
 function App() {
   return (
     <Container>
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
+      <SnapContainer>
+        <Hero />
+      </SnapContainer>
+      <SnapContainer>
+        <About />
+      </SnapContainer>
+      <SnapContainer>
+        <Projects />
+      </SnapContainer>
+      <SnapContainer>
+        <Contact />
+      </SnapContainer>
     </Container>
   );
 }

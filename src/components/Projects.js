@@ -7,9 +7,7 @@ const Section = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: #1f1f1f; */
-  height: 100vh;
-  scroll-snap-align: center;
+  min-height: 100vh;
 `;
 
 const ProjectGrid = styled.div`
@@ -19,38 +17,56 @@ const ProjectGrid = styled.div`
   justify-content: space-evenly;
   max-width: 1000px;
   margin-top: 2rem;
+  width: 100%;
+`;
+
+const ProjectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 `;
 
 const ProjectCard = styled.div`
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
-
   height: 10rem;
-  width: 10rem;
+  width: 100%;
   align-items: center;
   font-size: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+  }
 `;
 const Title = styled.div`
   font-size: 1.5rem;
 `;
 const Description = styled.div`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 `;
 
 function Projects() {
   return (
     <Section id="projects">
-      <Title>
-        <h3>Projects</h3>
-      </Title>
-      <Description>Some projects that I've worked on:</Description>
-      <ProjectGrid>
-        <ProjectCard>Project 1</ProjectCard>
-        <ProjectCard>Project 2</ProjectCard>
-        <ProjectCard>Project 3</ProjectCard>
-        <ProjectCard>Project 4</ProjectCard>
-      </ProjectGrid>
+      <ProjectContainer>
+        <Title>
+          <h3>Projects</h3>
+        </Title>
+        <Description>Some projects that I've worked on:</Description>
+        <ProjectGrid>
+          <ProjectCard>Project 1</ProjectCard>
+          <ProjectCard>Project 2</ProjectCard>
+          <ProjectCard>Project 3</ProjectCard>
+          <ProjectCard>Project 4</ProjectCard>
+        </ProjectGrid>
+      </ProjectContainer>
     </Section>
   );
 }

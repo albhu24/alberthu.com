@@ -8,10 +8,12 @@ import img from "./ai_img1.png";
 
 const Section = styled.div`
   /* height: 100vh; */
-  scroll-snap-align: center;
+
+  min-height: 100vh;
+  /* scroll-snap-align: center; */
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Open Sans", sans-serif;
   justify-content: center;
   align-items: center;
@@ -20,6 +22,7 @@ const Section = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
+
   #intro {
     font-size: 3rem;
     margin: 0;
