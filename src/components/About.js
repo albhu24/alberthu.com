@@ -42,21 +42,21 @@ function About() {
     <Section id="about">
       <AboutMe>
         <h5>
-          Self-taught software engineer who delights in discovering new insights
-          every day and collaborating with fellow innovators to create products
-          that have the potential to transform the world.
+          Self-taught software engineer who is driven by curiosity and enjoys
+          collaborating with fellow innovators to create products that have the
+          potential to transform the world.
         </h5>
       </AboutMe>
       <Technologies>
         <h5>Here are some technologies that I work with:</h5>
       </Technologies>
       <Bullet>
-        <ListItem>ReactJS</ListItem>
         <ListItem>Javascript</ListItem>
         <ListItem>HTML</ListItem>
         <ListItem>CSS</ListItem>
         <ListItem>Java</ListItem>
         <ListItem>Python</ListItem>
+        <ListItem>ReactJS</ListItem>
       </Bullet>
     </Section>
   );

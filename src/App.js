@@ -17,8 +17,8 @@ const Container = styled.div`
   overflow-y: scroll; // controls how the content is displayed when it overflows the vertical boundaries of an element.
 
   background-image: url(${photo});
-  background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+
   &::-webkit-scrollbar {
     // this hides the scrollbar in webkit based browsers such as chrome/safari/opera
     display: none;

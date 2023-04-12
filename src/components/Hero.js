@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Navbar from "./Navbar";
 
 import down from "./down.png";
-import img from "./ai_img1.png";
 
 const Section = styled.div`
   /* height: 100vh; */
@@ -18,18 +17,16 @@ const Section = styled.div`
   justify-content: center;
   align-items: center;
 
-  /* background-image: url(${img});
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
-
   #intro {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0;
     color: white;
   }
   #jobTitle {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0px;
     color: white;
   }

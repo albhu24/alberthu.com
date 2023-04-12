@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
 
-import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaGithub, FaGoogle } from "react-icons/fa";
+import { CiMail, CiLinkedin, CiInstagram } from "react-icons/ci";
+import { VscGithubInverted, VscGithubAlt } from "react-icons/vsc";
 
 const Section = styled.div`
   min-height: 100vh;
@@ -50,33 +52,38 @@ const SocialLink = styled.a`
 function Contact() {
   return (
     <Section id="contact">
-      {/* ... */}
       <h1>Get in Touch</h1>
       <h6>I'm currently looking for new opportunities!</h6>
-      {/* <a href="mailto:albhu24@gmail.com">
-        <ContactMe>Say Hello</ContactMe>
-      </a> */}
+
       <SocialLinks>
+        <SocialLink
+          href="mailto:albhu24@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <CiMail />
+        </SocialLink>
         <SocialLink
           href="https://www.linkedin.com/in/albert-h-55b16188/"
           target="_blank"
           rel="noreferrer"
         >
-          <FaLinkedin />
+          <CiLinkedin />
+        </SocialLink>
+
+        <SocialLink
+          href="https://github.com/albhu24"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <VscGithubAlt />
         </SocialLink>
         <SocialLink
           href="https://www.instagram.com/hus.cookin/"
           target="_blank"
           rel="noreferrer"
         >
-          <FaInstagram />
-        </SocialLink>
-        <SocialLink
-          href="https://github.com/albhu24"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaGithub />
+          <CiInstagram />
         </SocialLink>
       </SocialLinks>
     </Section>

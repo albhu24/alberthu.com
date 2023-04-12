@@ -8,12 +8,13 @@ const Section = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
 `;
 
 const ProjectGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   justify-content: space-evenly;
   max-width: 1000px;
   margin-top: 2rem;
@@ -24,7 +25,7 @@ const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 `;
 
 const ProjectCard = styled.div`
